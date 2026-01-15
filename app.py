@@ -30,9 +30,9 @@ st.write(
 # Load models
 # --------------------------------------------------
 MODEL_PATHS = {
-    "Logistic Regression": "saved_models/logistic_regression.pkl",
-    # "Decision Tree": "saved_models/decision_tree.pkl",
-    # "KNN": "saved_models/knn.pkl",
+    "Logistic Regression": "model/logistic_regression.pkl",
+    "Decision Tree": "model/decision_tree.pkl",
+    "KNN": "model/knn.pkl",
     # "Naive Bayes": "saved_models/naive_bayes.pkl",
     # "Random Forest (Ensemble)": "saved_models/random_forest.pkl",
     # "XGBoost (Ensemble)": "saved_models/xgboost.pkl"
