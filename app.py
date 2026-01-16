@@ -30,12 +30,12 @@ st.write(
 # Load models
 # --------------------------------------------------
 MODEL_PATHS = {
-    "Logistic Regression": "model/logistic_regression.pkl",
-    "Decision Tree": "model/decision_tree.pkl",
-    "KNN": "model/knn.pkl",
-    # "Naive Bayes": "saved_models/naive_bayes.pkl",
-    # "Random Forest (Ensemble)": "saved_models/random_forest.pkl",
-    # "XGBoost (Ensemble)": "saved_models/xgboost.pkl"
+    "Logistic Regression": "model/saved_models/logistic_regression.pkl",
+    "Decision Tree": "model/saved_models/decision_tree.pkl",
+    "KNN": "model/saved_models/knn.pkl",
+    "Naive Bayes": "model/saved_models/naive_bayes.pkl",
+    "Random Forest (Ensemble)": "model/saved_models/random_forest.pkl",
+    "XGBoost (Ensemble)": "model/saved_models/xg_boost.pkl"
 }
 EXPECTED_COLUMNS = [
     "age",
