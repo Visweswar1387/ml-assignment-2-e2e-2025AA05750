@@ -20,7 +20,12 @@ st.set_page_config(
     page_title="ML Assignment 2",
     layout="centered"
 )
-st.title("ML Assignment 2")
+st.title("ML Assignment 2 - 2025AA05750")
+st.info(
+    "The models in this application are trained on a heart disease dataset. "
+    "For correct predictions, please upload a CSV file containing the same columns "
+    "used during training."
+)
 st.write(
     """
     Upload **test data only (CSV format)**, select a trained model, and view evaluation metrics and confusion matrix.
