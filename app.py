@@ -20,17 +20,34 @@ st.set_page_config(
     page_title="ML Assignment 2",
     layout="centered"
 )
-st.title("ML Assignment 2 - 2025AA05750")
+st.title("ML Assignment 2 – 2025AA05750")
+
 st.info(
-    "The models in this application are trained on a heart disease dataset. "
-    "For correct predictions, please upload a CSV file containing the same columns "
-    "used during training."
+    "This application uses machine learning models trained on a heart disease dataset. "
+    "Please upload a test CSV file containing the same feature columns used during training."
 )
-st.write(
+
+st.markdown(
     """
-    Upload **test data only (CSV format)**, select a trained model, and view evaluation metrics and confusion matrix.
+    **Instructions:**
+    - Download the sample test dataset if required (provided in the sidebar)
+    - Upload **test data only** in CSV format
+    - Select a trained model to view evaluation metrics and confusion matrix
     """
 )
+
+# Download sample test dataset
+TEST_FILE_PATH = "heart_test.csv"
+
+with st.sidebar:
+    st.header("Resources")
+    with open(TEST_FILE_PATH, "rb") as file:
+        st.download_button(
+            label="📥 Download Sample Test Dataset",
+            data=file,
+            file_name="heart_test.csv",
+            mime="text/csv"
+        )
 # --------------------------------------------------
 # Load models
 # --------------------------------------------------
